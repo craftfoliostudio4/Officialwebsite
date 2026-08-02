@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Craftfolio Studio — نصمم حضورك الرقمي الفاخر</title>
+<meta name="description" content="استوديو Craftfolio: تصميم وتطوير Portfolio، هويات بصرية، واجهات UI/UX، مواقع ومتاجر إلكترونية بمستوى عالمي." />
+<meta name="keywords" content="Craftfolio, Portfolio, UI/UX, تصميم مواقع, هوية بصرية, تطوير مواقع, متجر إلكتروني, لوحة تحكم" />
+<meta name="author" content="Craftfolio Studio" />
+<!-- favicon: استبدل بمسار صورة الأيقونة الخاصة بك -->
+<link rel="icon" href="Image/شعار.png" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Craftfolio Studio — نصمم حضورك الرقمي الفاخر" />
+<meta property="og:description" content="تصميم Portfolio، هويات بصرية، واجهات UI/UX، مواقع ومتاجر إلكترونية بجودة عالمية." />
+<meta property="og:locale" content="ar_SA" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Craftfolio Studio" />
+<meta name="twitter:description" content="نبني حضورًا رقميًا يعكس قيمة أعمالك." />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Craftfolio Studio",
+  "description": "Design & development studio for portfolios, brand identity, UI/UX, websites, e-commerce and dashboards.",
+  "areaServed": "SA",
+  "priceRange": "SAR 299 - SAR 3999"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="brand">
+      <!-- شعار الناف بار: استبدل # بـ <img src="مسار_الشعار"> -->
+      <img src="Image/شعار.png" alt="شعار الموقع" class="brand-logo theme-logo">
+      <span class="brand-name" data-i18n="brand.name">كرافتفوليو ستوديو<span data-i18n="brand.tagline">STUDIO</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" data-i18n="nav.home">الرئيسية</a></li>
+      <li><a href="#about" data-i18n="nav.about">من نحن</a></li>
+      <li><a href="#services" data-i18n="nav.services">خدماتنا</a></li>
+      <li><a href="#portfolio" data-i18n="nav.portfolio">معرض الأعمال</a></li>
+      <li><a href="#testimonials" data-i18n="nav.testimonials">آراء العملاء</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Dark mode">
+        <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="icon-btn" id="lang-toggle">EN</button>
+      <button class="btn btn-sage btn-sm" id="nav-order-btn" data-i18n="nav.order" onclick="orderWA()">اطلب الآن</button>
+      <button class="burger" id="burger" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="var(--sage)" stroke-width="1" fill="none" opacity=".5">
+        <circle cx="950" cy="180" r="230" stroke-dasharray="4 8"/>
+        <circle cx="950" cy="180" r="300"/>
+        <path d="M700 60 L800 20 L860 80" />
+        <path d="M1180 260 L1080 260 L1020 340"/>
+      </g>
+      <g fill="var(--sage)" opacity=".65">
+        <circle cx="700" cy="60" r="5"/><circle cx="800" cy="20" r="4"/><circle cx="860" cy="80" r="7"/>
+        <circle cx="1180" cy="260" r="6"/><circle cx="1020" cy="340" r="5"/>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap" style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+    <div class="eyebrow reveal" data-i18n="hero.eyebrow">استوديو تصميم وتطوير رقمي</div>
+    <h1 class="hero-title reveal" data-i18n="hero.title" style="max-width:800px; margin-top:20px;">نبني حضورًا رقميًا <span class="accent">يعكس قيمة</span> أعمالك</h1>
+    <p class="hero-desc reveal" data-i18n="hero.desc" style="max-width:640px; margin:0 auto 38px auto;">نصمم Portfolio وهويات بصرية وواجهات ومواقع فاخرة، بلمسة دقيقة تشبه حرفية صانع الشعارات: كل خط له معنى، وكل تفصيلة تخدم هدفك.</p>
+    <div class="hero-cta reveal">
+      <button class="btn btn-primary" onclick="orderWA()">
+        <span data-i18n="hero.cta1">ابدأ مشروعك</span>
+      </button>
+      <a href="#portfolio" class="btn btn-outline" data-i18n="hero.cta2">شاهد أعمالنا</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section" style="padding-top:60px;">
+  <div class="wrap" style="max-width:840px; text-align:center;">
+    <div class="reveal" style="margin-bottom:70px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+      <div class="eyebrow">شعارنا</div>
+      <img src="Image/شعار.png" alt="شعار كرافتفوليو" class="theme-logo" style="max-width:280px; height:auto; object-fit:contain; margin-top:20px;">
+    </div>
+    <div class="about-copy">
+      <div class="eyebrow" data-i18n="about.eyebrow">من نحن</div>
+      <h2 class="reveal" data-i18n="about.title" style="font-size:clamp(44px,6.5vw,72px); margin-bottom:22px;">حرفية رقمية بمقاييس عالمية</h2>
+      <p class="reveal" data-i18n="about.p1">كرافتفوليو ستوديو هو استوديو تصميم وتطوير متخصص في بناء حضور رقمي فاخر للأفراد والشركات والمؤسسات. نجمع بين دقة الهندسة وحرفية التصميم لنخرج بمنتج يشبه صاحبه تمامًا.</p>
+      <p class="reveal" data-i18n="about.p2">رسالتنا: تحويل فكرتك إلى تجربة رقمية تُقنع عملاءك من أول نظرة. رؤيتنا: أن نكون الخيار الأول لكل من يبحث عن التميز الرقمي في المنطقة.</p>
+      <div class="about-pillars">
+        <div class="pillar reveal"><h4 data-i18n="about.pillar1.title">دقة هندسية</h4><p data-i18n="about.pillar1.desc">كود نظيف وأداء سريع في كل مشروع.</p></div>
+        <div class="pillar reveal"><h4 data-i18n="about.pillar2.title">حرفية بصرية</h4><p data-i18n="about.pillar2.desc">هوية بصرية مصممة خصيصًا لعلامتك.</p></div>
+        <div class="pillar reveal"><h4 data-i18n="about.pillar3.title">تركيز على النتيجة</h4><p data-i18n="about.pillar3.desc">هدفنا تحويل الزائر إلى عميل فعلي.</p></div>
+        <div class="pillar reveal"><h4 data-i18n="about.pillar4.title">شراكة مستمرة</h4><p data-i18n="about.pillar4.desc">دعم وتطوير بعد التسليم أيضًا.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="section" style="background:var(--stone-soft);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="services.eyebrow">خدماتنا</div>
+      <h2 data-i18n="services.title" style="font-size:clamp(44px,6.5vw,72px);">كل ما تحتاجه لتتألق رقميًا</h2>
+    </div>
+    <div class="centered-cards" id="services-grid"></div>
+  </div>
+</section>
+
+
+
+<!-- ============ PORTFOLIO ============ -->
+<section id="portfolio" class="section" style="background:var(--stone-soft);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="portfolio.eyebrow">معرض الأعمال</div>
+      <h2 data-i18n="portfolio.title" style="font-size:clamp(44px,6.5vw,72px);">قصص نجاح صممناها بشغف</h2>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="centered-cards" id="portfolio-grid"></div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="section">
+  <div class="wrap">
+    <div class="section-head" style="margin-inline:auto; text-align:center; max-width:640px;">
+      <div class="eyebrow" style="justify-content:center;" data-i18n="testimonials.eyebrow">آراء شركاء النجاح</div>
+      <h2 data-i18n="testimonials.title" style="font-size:clamp(44px,6.5vw,72px);">ماذا يقول عملاؤنا</h2>
+    </div>
+    <div class="testi-wrap">
+      <div class="testi-track" id="testi-track"></div>
+      <div class="testi-dots" id="testi-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div id="cta">
+      <h2 data-i18n="cta.title">جاهز لبدء مشروعك؟</h2>
+      <p data-i18n="cta.desc">تواصل معنا الآن وسيقوم فريقنا بالرد عليك فورًا لمناقشة التفاصيل وتقديم الاستشارة مجانًا.</p>
+      <button class="btn btn-sage" onclick="orderWA()">
+        <span data-i18n="cta.button">ابدأ مشروعك الآن</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <!-- شعار الفوتر: استبدل # بـ <img src="مسار_الشعار"> -->
+          <img src="Image/شعار.png" alt="شعار الموقع" class="footer-brand-logo">
+          <span class="brand-name" data-i18n="brand.name">كرافت فوليو ستوديو</span>
+        </div>
+        <p class="about-text" data-i18n="footer.about">نصمم ونصنع واجهات وهويات رقمية فاخرة تعكس قيمة أعمالك وتزيد من نجاحك في العالم الرقمي.</p>
+        <div class="social-row">
+          <a class="icon-btn" id="social-wa" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
+          <a class="icon-btn" id="social-ig" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+          <a class="icon-btn" id="social-mail" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+          <a class="icon-btn" id="social-in" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.2 1.48-2.2 3v5.8H9z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer.company">الشركة</h5>
+        <a href="#about" data-i18n="nav.about">من نحن</a>
+        <a href="#services" data-i18n="nav.services">الخدمات</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer.explore">استكشف</h5>
+        <a href="#portfolio" data-i18n="nav.portfolio">معرض الأعمال</a>
+        <a href="#testimonials" data-i18n="nav.testimonials">آراء العملاء</a>
+        <a href="#contact" data-i18n="nav.contact">تواصل معنا</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer.contact">تواصل</h5>
+        <a id="footer-email"></a>
+        <a id="footer-wa"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Craftfolio Studio. <span data-i18n="footer.rights">جميع الحقوق محفوظة.</span></span>
+      <span data-i18n="footer.made">صُنع بحرفية ودقة.</span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div id="lightbox">
+  <button class="lb-close" onclick="closeLightbox()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <div class="lb-content">
+    <div class="lb-visual" id="lb-visual" style="background:var(--stone-soft);"></div>
+    <div class="lb-body">
+      <span class="pf-tag" id="lb-tag"></span>
+      <h3 id="lb-title"></h3>
+      <p id="lb-desc"></p>
+      <button class="btn btn-primary btn-sm" onclick="orderWA()"><span data-i18n="portfolio.lbCta">اطلب مشروعًا مشابهًا</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
