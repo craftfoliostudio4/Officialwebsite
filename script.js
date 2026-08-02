@@ -1,0 +1,350 @@
+/* =====================================================================
+   SETTINGS — المصدر الوحيد لكل البيانات القابلة للتعديل في الموقع
+   ===================================================================== */
+const SETTINGS = {
+  whatsapp: "967770721148", // ⚠️ عدّل رقم الواتساب هنا فقط (بدون + وبدون صفر البداية)
+  email: "craftfoliostudio2004@gmail.com",
+  instagram: "https://www.instagram.com/craftfolio.studio?igsh=YndwaGJsY2RuMDk0",
+  linkedin: "https://linkedin.com/company/craftfolio-studio",
+  companyName: { ar: "كرافتفوليو ستوديو", en: "Craftfolio Studio" }
+};
+
+/* =====================================================================
+   i18n DICTIONARY
+   ===================================================================== */
+const I18N = {
+  ar: {
+    "brand.name": SETTINGS.companyName.ar,
+    "brand.tagline": "STUDIO",
+    "nav.home":"الرئيسية","nav.about":"من نحن","nav.services":"خدماتنا","nav.pricing":"الأسعار",
+    "nav.portfolio":"معرض الأعمال","nav.testimonials":"آراء العملاء","nav.contact":"تواصل معنا","nav.order":"اطلب الآن",
+    "hero.eyebrow":"استوديو تصميم وتطوير رقمي",
+    "hero.title":'نبني حضورًا رقميًا <span class="accent">يعكس قيمة</span> أعمالك',
+    "hero.desc":"نصمم Portfolio وهويات بصرية وواجهات ومواقع فاخرة، بلمسة دقيقة تشبه حرفية صانع الشعارات: كل خط له معنى، وكل تفصيلة تخدم هدفك.",
+    "hero.cta1":"ابدأ مشروعك","hero.cta2":"شاهد أعمالنا",
+    "hero.stat1":"مشروع منجز","hero.stat2":"رضا العملاء","hero.stat3":"تقييم متوسط",
+    "about.eyebrow":"من نحن","about.title":"حرفية رقمية بمقاييس عالمية",
+    "about.p1":"كرافتفوليو ستوديو هو استوديو تصميم وتطوير متخصص في بناء حضور رقمي فاخر للأفراد والشركات والمؤسسات. نجمع بين دقة الهندسة وحرفية التصميم لنخرج بمنتج يشبه صاحبه تمامًا.",
+    "about.p2":"رسالتنا: تحويل فكرتك إلى تجربة رقمية تُقنع عملاءك من أول نظرة. رؤيتنا: أن نكون الخيار الأول لكل من يبحث عن التميز الرقمي في المنطقة.",
+    "about.pillar1.title":"دقة هندسية","about.pillar1.desc":"كود نظيف وأداء سريع في كل مشروع.",
+    "about.pillar2.title":"حرفية بصرية","about.pillar2.desc":"هوية بصرية مصممة خصيصًا لعلامتك.",
+    "about.pillar3.title":"تركيز على النتيجة","about.pillar3.desc":"هدفنا تحويل الزائر إلى عميل فعلي.",
+    "about.pillar4.title":"شراكة مستمرة","about.pillar4.desc":"دعم وتطوير بعد التسليم أيضًا.",
+    "services.eyebrow":"خدماتنا","services.title":"كل ما تحتاجه لتتألق رقميًا",
+    "services.cta":"اطلب الخدمة","services.from":"يبدأ من",
+    "pricing.eyebrow":"الأسعار","pricing.title":"باقات واضحة بلا مفاجآت",
+    "pricing.disclaimer":"الأسعار استرشادية وقد تختلف حسب متطلبات المشروع",
+    "pricing.cta":"اطلب الآن","pricing.currency":"ريال",
+    "portfolio.eyebrow":"معرض الأعمال","portfolio.title":"قصص نجاح صممناها بشغف",
+    "portfolio.lbCta":"اطلب مشروعًا مشابهًا",
+    "filter.all":"الكل",
+    "testimonials.eyebrow":"آراء شركاء النجاح","testimonials.title":"ماذا يقول عملاؤنا",
+    "cta.title":"جاهز لبدء مشروعك؟",
+    "cta.desc":"تواصل معنا الآن وسيقوم فريقنا بالرد عليك فورًا لمناقشة التفاصيل وتقديم الاستشارة مجانًا.",
+    "cta.button":"ابدأ مشروعك الآن",
+    "footer.about":"نصمم ونصنع واجهات وهويات رقمية فاخرة تعكس قيمة أعمالك وتزيد من نجاحك في العالم الرقمي.",
+    "footer.company":"الشركة","footer.explore":"استكشف","footer.contact":"تواصل",
+    "footer.rights":"جميع الحقوق محفوظة.","footer.made":"صُنع بحرفية ودقة."
+  },
+  en: {
+    "brand.name": SETTINGS.companyName.en,
+    "brand.tagline": "STUDIO",
+    "nav.home":"Home","nav.about":"About","nav.services":"Services","nav.pricing":"Pricing",
+    "nav.portfolio":"Portfolio","nav.testimonials":"Testimonials","nav.contact":"Contact","nav.order":"Order Now",
+    "hero.eyebrow":"Digital design & development studio",
+    "hero.title":'We build a digital presence <span class="accent">worthy of</span> your work',
+    "hero.desc":"We design portfolios, brand identities, interfaces and luxury websites — with the precision of a craftsman: every line has meaning, every detail serves your goal.",
+    "hero.cta1":"Start your project","hero.cta2":"View our work",
+    "hero.stat1":"Projects delivered","hero.stat2":"Client satisfaction","hero.stat3":"Average rating",
+    "about.eyebrow":"About us","about.title":"Digital craftsmanship, world-class standard",
+    "about.p1":"Craftfolio Studio is a design & development studio specialized in building a luxury digital presence for individuals, companies and institutions. We combine engineering precision with design craftsmanship to deliver a product that truly reflects its owner.",
+    "about.p2":"Our mission: turn your idea into a digital experience that convinces clients at first glance. Our vision: to be the first choice for anyone seeking digital excellence in the region.",
+    "about.pillar1.title":"Engineering precision","about.pillar1.desc":"Clean code and fast performance in every project.",
+    "about.pillar2.title":"Visual craftsmanship","about.pillar2.desc":"A brand identity designed specifically for you.",
+    "about.pillar3.title":"Results-focused","about.pillar3.desc":"Our goal: turn visitors into real clients.",
+    "about.pillar4.title":"Ongoing partnership","about.pillar4.desc":"Support and iteration after delivery too.",
+    "services.eyebrow":"Our services","services.title":"Everything you need to shine online",
+    "services.cta":"Request service","services.from":"Starting from",
+    "pricing.eyebrow":"Pricing","pricing.title":"Clear packages, no surprises",
+    "pricing.disclaimer":"Prices are indicative and may vary based on project requirements",
+    "pricing.cta":"Order now","pricing.currency":"SAR",
+    "portfolio.eyebrow":"Portfolio","portfolio.title":"Work that speaks for itself",
+    "portfolio.lbCta":"Request a similar project",
+    "filter.all":"All",
+    "testimonials.eyebrow":"What our partners say","testimonials.title":"What our clients say",
+    "cta.title":"Ready to start your project?",
+    "cta.desc":"Reach out now and our team will respond right away to discuss the details and offer a free consultation.",
+    "cta.button":"Start your project now",
+    "footer.about":"We design and craft luxury digital interfaces and identities that reflect the value of your work and grow your success online.",
+    "footer.company":"Company","footer.explore":"Explore","footer.contact":"Contact",
+    "footer.rights":"All rights reserved.","footer.made":"Crafted with precision."
+  }
+};
+
+/* =====================================================================
+   DATA: services / pricing / portfolio / testimonials
+   ===================================================================== */
+const ICONS = {
+  person:'<path d="M12 12a4 4 0 100-8 4 4 0 000 8zM4 20c0-4 4-6 8-6s8 2 8 6"/>',
+  building:'<path d="M4 21V6l8-3 8 3v15M9 21v-5h6v5M9 10h.01M9 14h.01M15 10h.01M15 14h.01"/>',
+  institution:'<path d="M3 21h18M4 21V10l8-6 8 6v11M9 21v-6h6v6"/>',
+  uiux:'<path d="M4 5h16v10H4zM8 19h8M12 15v4"/><circle cx="8.5" cy="9" r="1"/><circle cx="12" cy="9" r="1"/>',
+  design:'<path d="M12 20l8-8-4-4-8 8v4h4z"/><path d="M14.5 6.5l3 3"/>',
+  dev:'<path d="M8 9l-4 4 4 4M16 9l4 4-4 4M13 5l-2 14"/>',
+  brand:'<circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16"/>',
+  logo:'<path d="M17 7a7 7 0 100 10"/>',
+  ecommerce:'<path d="M3 6h18l-2 9H7L5 4H2M9 20a1 1 0 100-2 1 1 0 000 2zM17 20a1 1 0 100-2 1 1 0 000 2z"/>',
+  dashboard:'<rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="5" rx="1"/><rect x="13" y="10" width="8" height="11" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/>'
+};
+
+const SERVICES = [
+  { icon:"person", ar:{n:"Portfolio شخصي", d:"معرض أعمال أنيق يبرز مهاراتك كفرد محترف."}, en:{n:"Personal Portfolio", d:"An elegant showcase that highlights your professional skills."}, price:799 },
+  { icon:"building", ar:{n:"Portfolio للشركات", d:"موقع تعريفي فاخر يعكس هوية شركتك."}, en:{n:"Business Portfolio", d:"A premium showcase reflecting your company's identity."}, price:2499 },
+  { icon:"institution", ar:{n:"Portfolio للمؤسسات", d:"حلول عرض شاملة للمؤسسات الكبرى."}, en:{n:"Institutional Portfolio", d:"Comprehensive showcase solutions for large institutions."}, price:2999 },
+  { icon:"uiux", ar:{n:"تصميم UI/UX", d:"واجهات سهلة الاستخدام وتجربة مستخدم مدروسة."}, en:{n:"UI/UX Design", d:"Intuitive interfaces and a thoughtfully crafted experience."}, price:699 },
+
+];
+
+
+
+const PF_CATS = [
+  { key:"personal", ar:"بورتفليو شخصي", en:"Personal Portfolio" },
+  { key:"company", ar:"بورتفليو شركة", en:"Company Portfolio" },
+  { key:"institution", ar:"بورتفليو مؤسسة", en:"Institutional Portfolio" },
+  { key:"uiux", ar:"أعمال UI/UX", en:"UI/UX Works" }
+];
+const PORTFOLIO = [
+  { cat:"personal", icon:"person", ar:{t:"معرض أعمال مصمم مستقل", d:"موقع شخصي أنيق لعارضة أعمال تصميم جرافيك."}, en:{t:"Independent Designer Showcase", d:"An elegant personal site for a graphic design portfolio."}},
+  { cat:"uiux", icon:"uiux", ar:{t:"واجهة تطبيق مالي", d:"تصميم UI/UX لتطبيق إدارة مصاريف شخصية."}, en:{t:"Fintech App Interface", d:"UI/UX design for a personal finance management app."}},
+  { cat:"company", icon:"building", ar:{t:"موقع تعريفي لشركة استشارات", d:"حضور رقمي احترافي لشركة استشارات إدارية."}, en:{t:"Consulting Firm Website", d:"A professional digital presence for a management consultancy."}},
+  { cat:"institution", icon:"institution", ar:{t:"منصة مؤسسة تعليمية", d:"حلول عرض شاملة وتفاعلية لمؤسسة تعليمية كبرى."}, en:{t:"Educational Institution Platform", d:"Comprehensive interactive showcase for a major educational institution."}},
+  { cat:"uiux", icon:"dashboard", ar:{t:"لوحة تحكم لوجستية", d:"نظام لإدارة الشحنات والمخزون بصريًا."}, en:{t:"Logistics Dashboard", d:"A visual system for managing shipments and inventory."}},
+  { cat:"personal", icon:"person", ar:{t:"معرض أعمال مصور فوتوغرافي", d:"حضور رقمي أنيق لعرض الصور والخدمات."}, en:{t:"Photographer Showcase", d:"An elegant digital presence to showcase photos and services."}}
+];
+
+const TESTIMONIALS = [
+  { name:"سارة العتيبي", nameEn:"Sarah Al-Otaibi", role:{ar:"مؤسسة علامة أزياء", en:"Fashion brand founder"}, comment:{ar:"فريق كرافت فوليو حوّل فكرتي لموقع فاخر بالضبط كما تخيلته. احترافية عالية والتزام بالمواعيد.", en:"The Craftfolio team turned my idea into a luxury site exactly as I imagined. High professionalism and always on time."} },
+  { name:"عبدالله الحربي", nameEn:"Abdullah Al-Harbi", role:{ar:"مدير تسويق", en:"Marketing Manager"}, comment:{ar:"لوحة التحكم التي صمموها لنا وفرت علينا ساعات عمل يوميًا. تصميم بسيط وسريع.", en:"The dashboard they built saved us hours of work every day. Simple, fast design."} },
+  { name:"نورة القحطاني", nameEn:"Noura Al-Qahtani", role:{ar:"صاحبة متجر إلكتروني", en:"E-commerce owner"}, comment:{ar:"المتجر الإلكتروني الذي بنوه رفع مبيعاتنا بشكل ملحوظ خلال أول شهر فقط.", en:"The store they built noticeably boosted our sales within the very first month."} }
+];
+
+let currentLang = "ar";
+let currentTheme = "light";
+
+/* storage helpers — tries localStorage, falls back to memory (safe in any environment) */
+const memStore = {};
+function storeGet(k){ try{ return localStorage.getItem(k); }catch(e){ return memStore[k] ?? null; } }
+function storeSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){ memStore[k]=v; } }
+
+function t(key){ return (I18N[currentLang] && I18N[currentLang][key]) || key; }
+
+function applyI18n(){
+  document.documentElement.lang = currentLang;
+  document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.getAttribute("data-i18n");
+    el.innerHTML = t(key);
+  });
+  document.getElementById("lang-toggle").textContent = currentLang === "ar" ? "EN" : "AR";
+  renderServices(); renderFilters(); renderPortfolio(currentFilter); renderTestimonials();
+  document.getElementById("footer-email").textContent = SETTINGS.email;
+  document.getElementById("footer-email").href = "mailto:" + SETTINGS.email;
+  document.getElementById("footer-wa").textContent = currentLang === "ar" ? "واتساب مباشر" : "WhatsApp Direct";
+  document.getElementById("footer-wa").href = "https://wa.me/" + SETTINGS.whatsapp;
+  document.getElementById("social-wa").href = "https://wa.me/" + SETTINGS.whatsapp;
+  document.getElementById("social-ig").href = SETTINGS.instagram;
+  document.getElementById("social-in").href = SETTINGS.linkedin;
+  document.getElementById("social-mail").href = "mailto:" + SETTINGS.email;
+}
+
+function toggleLang(){
+  currentLang = currentLang === "ar" ? "en" : "ar";
+  storeSet("cf_lang", currentLang);
+  applyI18n();
+}
+
+function iconSvg(name, extra){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" ${extra||""}>${ICONS[name]||""}</svg>`;
+}
+
+/* ---------- render: services ---------- */
+function renderServices(){
+  const el = document.getElementById("services-grid");
+  el.innerHTML = SERVICES.map((s,i)=>{
+    const d = s[currentLang];
+    return `<div class="card reveal">
+      <div class="card-icon">${iconSvg(s.icon)}</div>
+      <h3>${d.n}</h3>
+      <p>${d.d}</p>
+      <div class="card-foot">
+        <button class="btn btn-sage" onclick="orderWA('${escapeStr(d.n)}')">${t("services.cta")}</button>
+      </div>
+    </div>`;
+  }).join("");
+  observeReveal();
+}
+
+
+
+/* ---------- render: portfolio filters + grid ---------- */
+let currentFilter = "all";
+function renderFilters(){
+  const cats = [...new Map(PF_CATS.map(c=>[c.key,c])).values()];
+  const el = document.getElementById("filters");
+  el.innerHTML = `<button class="filter-btn ${currentFilter==='all'?'active':''}" data-key="all">${t("filter.all")}</button>` +
+    cats.map(c=>`<button class="filter-btn ${currentFilter===c.key?'active':''}" data-key="${c.key}">${c[currentLang]}</button>`).join("");
+  el.querySelectorAll(".filter-btn").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      currentFilter = btn.dataset.key;
+      el.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));
+      btn.classList.add("active");
+      renderPortfolio(currentFilter);
+    });
+  });
+}
+
+function renderPortfolio(filter){
+  const el = document.getElementById("portfolio-grid");
+  const hues = ["var(--stone-soft)", "var(--sage-light)", "var(--stone)"];
+  el.innerHTML = PORTFOLIO.map((p,i)=>{
+    const d = p[currentLang];
+    const catObj = PF_CATS.find(c=>c.key===p.cat) || {ar:p.cat, en:p.cat};
+    const show = (filter === "all" || filter === p.cat);
+    return `<div class="pf-item ${show?'':'hidden'}" data-cat="${p.cat}" onclick='openLightbox(${i})'>
+      <div class="pf-thumb" style="background:${hues[i%hues.length]};">${iconSvg(p.icon,'style="width:34%;height:34%;color:var(--ink)"')}</div>
+      <div class="pf-info">
+        <span class="pf-tag">${catObj[currentLang]}</span>
+        <h4>${d.t}</h4>
+      </div>
+    </div>`;
+  }).join("");
+  observeReveal();
+}
+
+function openLightbox(i){
+  const p = PORTFOLIO[i];
+  const d = p[currentLang];
+  const catObj = PF_CATS.find(c=>c.key===p.cat) || {ar:p.cat, en:p.cat};
+  document.getElementById("lb-tag").textContent = catObj[currentLang];
+  document.getElementById("lb-title").textContent = d.t;
+  document.getElementById("lb-desc").textContent = d.d;
+  document.getElementById("lb-visual").innerHTML = iconSvg(p.icon, 'style="width:80px;height:80px;color:var(--ink)"');
+  document.getElementById("lightbox").classList.add("open");
+}
+function closeLightbox(){ document.getElementById("lightbox").classList.remove("open"); }
+
+/* ---------- render: testimonials ---------- */
+let testiIndex = 0;
+function renderTestimonials(){
+  const track = document.getElementById("testi-track");
+  const dots = document.getElementById("testi-dots");
+  track.innerHTML = TESTIMONIALS.map(tItem=>{
+    const name = currentLang === "ar" ? tItem.name : tItem.nameEn;
+    const initial = name.trim().charAt(0);
+    return `<div class="testi-slide">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-comment">"${tItem.comment[currentLang]}"</p>
+        <div class="testi-person">
+          <div class="avatar">${initial}</div>
+          <div style="text-align:${currentLang==='ar'?'right':'left'}"><b>${name}</b><span>${tItem.role[currentLang]}</span></div>
+        </div>
+      </div>
+    </div>`;
+  }).join("");
+  dots.innerHTML = TESTIMONIALS.map((_,i)=>`<span class="testi-dot ${i===testiIndex?'active':''}" data-i="${i}"></span>`).join("");
+  updateTestiPosition();
+  dots.querySelectorAll(".testi-dot").forEach(d=>{
+    d.addEventListener("click", ()=>{ testiIndex = parseInt(d.dataset.i); renderTestimonials(); });
+  });
+}
+function updateTestiPosition(){
+  const track = document.getElementById("testi-track");
+  const dir = currentLang === "ar" ? 1 : -1;
+  track.style.transform = `translateX(${dir * testiIndex * 100}%)`;
+}
+let testiTimer = setInterval(()=>{
+  testiIndex = (testiIndex + 1) % TESTIMONIALS.length;
+  renderTestimonials();
+}, 6000);
+
+/* ---------- WhatsApp order system ---------- */
+function escapeStr(s){ return s.replace(/'/g,"\\'"); }
+function orderWA(serviceName, price){
+  let msg;
+  if (currentLang === "ar"){
+    if (serviceName){
+      msg = `السلام عليكم،\n\nأرغب في طلب خدمة ${serviceName}.\n` + (price ? `\nالسعر المعروض:\n${price} ريال سعودي.\n` : "") + `\nأرجو التواصل معي لإكمال التفاصيل.`;
+    } else {
+      msg = `السلام عليكم،\n\nأرغب بالحصول على استشارة مجانية بخصوص مشروعي.\nأرجو التواصل معي.`;
+    }
+  } else {
+    if (serviceName){
+      msg = `Hello,\n\nI would like to request the ${serviceName} service.\n` + (price ? `\nQuoted price: ${price} SAR.\n` : "") + `\nPlease contact me to complete the details.`;
+    } else {
+      msg = `Hello,\n\nI would like a free consultation about my project.\nPlease get in touch.`;
+    }
+  }
+  window.open(`https://wa.me/${SETTINGS.whatsapp}?text=${encodeURIComponent(msg)}`, "_blank");
+}
+
+/* ---------- theme ---------- */
+function applyTheme(){
+  document.documentElement.setAttribute("data-theme", currentTheme);
+  document.getElementById("theme-icon").innerHTML = currentTheme === "dark"
+    ? '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'
+    : '<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>';
+  const logoSrc = currentTheme === "dark" ? "Image/شعار.png" : "Image/شعار فاتح.png";
+  document.querySelectorAll(".theme-logo").forEach(img => img.src = logoSrc);
+}
+document.getElementById("theme-toggle").addEventListener("click", ()=>{
+  currentTheme = currentTheme === "light" ? "dark" : "light";
+  storeSet("cf_theme", currentTheme);
+  applyTheme();
+});
+
+document.getElementById("lang-toggle").addEventListener("click", toggleLang);
+
+/* ---------- navbar scroll + mobile menu ---------- */
+const navbar = document.getElementById("navbar");
+window.addEventListener("scroll", ()=>{
+  navbar.classList.toggle("scrolled", window.scrollY > 20);
+  document.getElementById("back-to-top").classList.toggle("show", window.scrollY > 600);
+});
+document.getElementById("burger").addEventListener("click", ()=>{
+  document.getElementById("navLinks").classList.toggle("open");
+});
+document.querySelectorAll(".nav-links a").forEach(a=>{
+  a.addEventListener("click", ()=>document.getElementById("navLinks").classList.remove("open"));
+});
+document.getElementById("back-to-top").addEventListener("click", ()=>window.scrollTo({top:0, behavior:"smooth"}));
+document.getElementById("lightbox").addEventListener("click", (e)=>{ if(e.target.id === "lightbox") closeLightbox(); });
+
+/* ---------- scroll reveal ---------- */
+let revealObserver;
+function observeReveal(){
+  if(!revealObserver){
+    revealObserver = new IntersectionObserver((entries)=>{
+      entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add("in"); revealObserver.unobserve(en.target); } });
+    }, { threshold:.15 });
+  }
+  document.querySelectorAll(".reveal:not(.in)").forEach(el=>revealObserver.observe(el));
+}
+
+/* ---------- hero pen-nib draw animation ---------- */
+window.addEventListener("load", ()=>{
+  const pen = document.getElementById("pen-path");
+  if(pen){
+    pen.style.transition = "opacity 1s ease .4s";
+    requestAnimationFrame(()=> pen.style.opacity = "1");
+  }
+});
+
+/* ---------- init ---------- */
+(function init(){
+  currentLang = storeGet("cf_lang") || "ar";
+  currentTheme = storeGet("cf_theme") || "dark";
+  applyTheme();
+  applyI18n();
+  observeReveal();
+})();
