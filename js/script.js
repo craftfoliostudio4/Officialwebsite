@@ -37,7 +37,7 @@ const I18N = {
     "pricing.cta": "اطلب الآن", "pricing.currency": "ريال",
     "portfolio.eyebrow": "معرض الأعمال", "portfolio.title": "قصص نجاح صممناها بشغف",
     "portfolio.lbCta": "اطلب مشروعًا مشابهًا",
-    "portfolio.lbBrowse": "تصفح البورتفليو",
+    "portfolio.lbBrowse": "تصفح البورتفوليو",
     "filter.all": "الكل",
     "testimonials.eyebrow": "آراء شركاء النجاح", "testimonials.title": "ماذا يقول عملاؤنا",
     "cta.title": "جاهز لبدء مشروعك؟",
@@ -100,19 +100,19 @@ const ICONS = {
 };
 
 const SERVICES = [
-  { icon: "person", ar: { n: "بورتفليو شخصي", d: "معرض أعمال أنيق يبرز مهاراتك كفرد محترف." }, en: { n: "Personal Portfolio", d: "An elegant showcase that highlights your professional skills." }, price: 799 },
-  { icon: "building", ar: { n: "بورتفليو أعمال", d: "موقع تعريفي فاخر يعكس هويتك التجارية." }, en: { n: "Business Portfolio", d: "A premium showcase reflecting your business identity." }, price: 2499 }
+  { icon: "person", ar: { n: "بورتفوليو شخصي", d: "معرض أعمال أنيق يبرز مهاراتك كفرد محترف." }, en: { n: "Personal Portfolio", d: "An elegant showcase that highlights your professional skills." }, price: 799 },
+  { icon: "building", ar: { n: "بورتفوليو أعمال", d: "موقع تعريفي فاخر يعكس هويتك التجارية." }, en: { n: "Business Portfolio", d: "A premium showcase reflecting your business identity." }, price: 2499 }
 ];
 
 
 
 const PF_CATS = [
-  { key: "personal", ar: "بورتفليو شخصي", en: "Personal Portfolio" },
-  { key: "business", ar: "بورتفليو أعمال", en: "Business Portfolio" }
+  { key: "personal", ar: "بورتفوليو شخصي", en: "Personal Portfolio" },
+  { key: "business", ar: "بورتفوليو أعمال", en: "Business Portfolio" }
 ];
 const PORTFOLIO = [
-  { url: "https://craftfoliostudio4.github.io/Fahmi/", img: "Image/الدكتور فهمي.png", cat: "personal", icon: "person", ar: { t: "الدكتور فهمي عرم", d: "موقع شخصي (بورتفليو) احترافي للدكتور فهمي عرم." }, en: { t: "Dr. Fahmi Aram", d: "A professional personal portfolio site for Dr. Fahmi Aram." } },
-  { url: "https://mo-sakaf.github.io/mo_sakaf/", img: "Image/محمد عمر.png", cat: "personal", icon: "person", ar: { t: "محمد عمر السقاف", d: "موقع شخصي (بورتفليو) احترافي لمحمد عمر السقاف." }, en: { t: "Mohammed Omar Al-Saqqaf", d: "A professional personal portfolio site for Mohammed Omar Al-Saqqaf." } },
+  { url: "https://craftfoliostudio4.github.io/Fahmi/", img: "Image/الدكتور فهمي.png", cat: "personal", icon: "person", ar: { t: "الدكتور فهمي عرم", d: "موقع شخصي (بورتفوليو) احترافي للدكتور فهمي عرم." }, en: { t: "Dr. Fahmi Aram", d: "A professional personal portfolio site for Dr. Fahmi Aram." } },
+  { url: "https://mo-sakaf.github.io/mo_sakaf/", img: "Image/محمد عمر.png", cat: "personal", icon: "person", ar: { t: "محمد عمر السقاف", d: "موقع شخصي (بورتفوليو) احترافي لمحمد عمر السقاف." }, en: { t: "Mohammed Omar Al-Saqqaf", d: "A professional personal portfolio site for Mohammed Omar Al-Saqqaf." } },
   { url: "https://craftfoliostudio4.github.io/Notesband/", img: "Image/نوتس باند.png", cat: "business", icon: "person", ar: { t: "فرقة نوتس باند", d: "فرقة موسيقية حضرمية تقدم مقطوعات موسيقية بطابع جديد." }, en: { t: "Notes Band", d: "A Hadhrami musical band that presents musical pieces in a new style." } }
 ];
 
