@@ -56,11 +56,10 @@
       <li><a href="#contact" data-i18n="nav.contact">تواصل معنا</a></li>
     </ul>
     <div class="nav-actions">
-      <button class="icon-btn" id="theme-toggle" aria-label="Dark mode">
-        <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      <button class="icon-btn theme-toggle" aria-label="Dark mode">
+        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></svg>
       </button>
-      <button class="icon-btn" id="lang-toggle">EN</button>
-      <button class="btn btn-sage btn-sm" id="nav-order-btn" data-i18n="nav.order" onclick="orderWA()">اطلب الآن</button>
+      <button class="icon-btn lang-toggle">EN</button>
       <button class="burger" id="burger" aria-label="Menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
@@ -178,7 +177,7 @@
       <div>
         <div class="footer-brand">
           <!-- شعار الفوتر: استبدل # بـ <img src="مسار_الشعار"> -->
-          <img src="Image/شعار.png" alt="شعار الموقع" class="footer-brand-logo">
+          <img src="Image/شعار.png" alt="شعار الموقع" class="footer-brand-logo theme-logo">
           <span class="brand-name" data-i18n="brand.name">كرافت فوليو ستوديو</span>
         </div>
         <p class="about-text" data-i18n="footer.about">نصمم ونصنع واجهات وهويات رقمية فاخرة تعكس قيمة أعمالك وتزيد من نجاحك في العالم الرقمي.</p>
@@ -223,11 +222,14 @@
   </button>
   <div class="lb-content">
     <div class="lb-visual" id="lb-visual" style="background:var(--stone-soft);"></div>
-    <div class="lb-body">
-      <span class="pf-tag" id="lb-tag"></span>
-      <h3 id="lb-title"></h3>
-      <p id="lb-desc"></p>
-      <button class="btn btn-primary btn-sm" onclick="orderWA()"><span data-i18n="portfolio.lbCta">اطلب مشروعًا مشابهًا</span></button>
+    <div class="lb-body" style="text-align:center; display:flex; flex-direction:column; align-items:center;">
+      <span class="pf-tag" id="lb-tag" style="margin-bottom:12px;"></span>
+      <h3 id="lb-title" style="font-size:26px; margin-bottom:12px;"></h3>
+      <p id="lb-desc" style="color:var(--muted); font-size:16px; margin-bottom:28px; max-width:500px; line-height:1.6;"></p>
+      <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap; width:100%;">
+        <button class="btn btn-primary" id="lb-btn-order" onclick="orderWA()"><span data-i18n="portfolio.lbCta">اطلب مشروعًا مشابهًا</span></button>
+        <a href="#" target="_blank" class="btn btn-outline" id="lb-btn-browse"><span data-i18n="portfolio.lbBrowse">تصفح البورتفليو</span></a>
+      </div>
     </div>
   </div>
 </div>
