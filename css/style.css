@@ -191,7 +191,7 @@ h1,h2,h3,h4{font-weight:800; letter-spacing:-.01em; color:var(--ink);}
 
 .pf-item{border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--line); cursor:pointer; background:var(--surface); transition:transform .4s var(--ease), box-shadow .4s var(--ease);}
 .pf-item:hover{transform:translateY(-6px); box-shadow:var(--shadow-md);}
-.pf-thumb{aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;}
+.pf-thumb{aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;}
 .pf-thumb svg{width:40%; opacity:.9; position:relative; z-index:1;}
 .pf-info{padding:18px 20px; text-align:center;}
 .pf-tag{font-size:14px; font-weight:700; color:var(--sage-dark); text-transform:uppercase; letter-spacing:.05em;}

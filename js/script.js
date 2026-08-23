@@ -2,7 +2,8 @@
    SETTINGS — المصدر الوحيد لكل البيانات القابلة للتعديل في الموقع
    ===================================================================== */
 const SETTINGS = {
-  whatsapp: "967770721148", // ⚠️ عدّل رقم الواتساب هنا فقط (بدون + وبدون صفر البداية)
+  whatsapp: "967737916133", // ⚠️ عدّل رقم الواتساب هنا فقط (بدون + وبدون صفر البداية)
+  telegram: "https://t.me/craftfoliostudio",
   email: "craftfoliostudio2004@gmail.com",
   instagram: "https://www.instagram.com/craftfolio.studio?igsh=YndwaGJsY2RuMDk0",
   linkedin: "https://www.linkedin.com/in/craftfolio-studio-كرافتفوليو-ستوديو-731698426",
@@ -117,6 +118,7 @@ const PORTFOLIO = [
 ];
 
 const TESTIMONIALS = [
+  { img: "Image/الدكتور فهمي 2.png", name: "الدكتور فهمي عرم", nameEn: "Dr. Fahmi Aram", role: { ar: "أستاذ الجراحة", en: "Professor of Surgery" }, comment: { ar: "الموقع قمة التميز والابداع يعكس مدى العلم والفن الذي وصلت له عقول ابناءنا وبناتنا الشباب وحصاد التعلم والجهد الذي بذلوه في مجال تقنية المعلومات. شي يدعو الى الفخر والاعتزاز والتنبوء بمستقبل زاهر في عالم الفن والتكنولوجيا.", en: "The website is the pinnacle of excellence and creativity. It reflects the level of science and art reached by the minds of our young men and women, and the harvest of their learning and effort in the field of information technology. It is something that calls for pride and the prediction of a bright future in the world of art and technology." } },
   { img: "Image/شعار نوتس باند.png", name: "فرقة نوتس باند", nameEn: "Notes Band", role: { ar: "فرقة موسيقية حضرمية", en: "Hadhrami musical band" }, comment: { ar: "كان التعاون مع <strong>Craftfolio Studio</strong> تجربة احترافية بكل معنى الكلمة. استطاع الفريق تحويل رؤيتنا إلى موقع إلكتروني عصري يعكس هوية <strong>Notes Band</strong> ويبرز أعمالنا وأعضاء الفرقة بطريقة أنيقة وسهلة التصفح. لمسنا اهتمامًا كبيرًا بالتفاصيل، وسرعة في تنفيذ الملاحظات، وحرصًا على تقديم أفضل نتيجة. كل الشكر لفريق Craftfolio Studio، ونتطلع إلى المزيد من التعاون في المستقبل.", en: "Collaborating with <strong>Craftfolio Studio</strong> was a truly professional experience. The team transformed our vision into a modern website that reflects the <strong>Notes Band</strong> identity and showcases our work and band members elegantly and seamlessly. We noticed great attention to detail, fast implementation of feedback, and a commitment to delivering the best result. Thanks to the Craftfolio Studio team, and we look forward to more collaborations in the future." } }
 ];
 
@@ -144,6 +146,7 @@ function applyI18n() {
   document.getElementById("footer-wa").textContent = currentLang === "ar" ? "واتساب مباشر" : "WhatsApp Direct";
   document.getElementById("footer-wa").href = "https://wa.me/" + SETTINGS.whatsapp;
   document.getElementById("social-wa").href = "https://wa.me/" + SETTINGS.whatsapp;
+  document.getElementById("social-tg").href = SETTINGS.telegram;
   document.getElementById("social-ig").href = SETTINGS.instagram;
   document.getElementById("social-in").href = SETTINGS.linkedin;
   document.getElementById("social-mail").href = "mailto:" + SETTINGS.email;
@@ -229,6 +232,7 @@ function closeLightbox() { document.getElementById("lightbox").classList.remove(
 
 /* ---------- render: testimonials ---------- */
 let testiIndex = 0;
+let testiTimer;
 function renderTestimonials() {
   const track = document.getElementById("testi-track");
   const dots = document.getElementById("testi-dots");
@@ -247,20 +251,36 @@ function renderTestimonials() {
     </div>`;
   }).join("");
   dots.innerHTML = TESTIMONIALS.map((_, i) => `<span class="testi-dot ${i === testiIndex ? 'active' : ''}" data-i="${i}"></span>`).join("");
-  updateTestiPosition();
+  
   dots.querySelectorAll(".testi-dot").forEach(d => {
-    d.addEventListener("click", () => { testiIndex = parseInt(d.dataset.i); renderTestimonials(); });
+    d.addEventListener("click", () => { 
+      testiIndex = parseInt(d.dataset.i); 
+      updateTestiPosition(); 
+      resetTestiTimer();
+    });
   });
+  updateTestiPosition();
+  resetTestiTimer();
 }
+
 function updateTestiPosition() {
   const track = document.getElementById("testi-track");
+  const dots = document.getElementById("testi-dots");
   const dir = currentLang === "ar" ? 1 : -1;
   track.style.transform = `translateX(${dir * testiIndex * 100}%)`;
+  dots.querySelectorAll(".testi-dot").forEach((d, i) => {
+    if (i === testiIndex) d.classList.add("active");
+    else d.classList.remove("active");
+  });
 }
-let testiTimer = setInterval(() => {
-  testiIndex = (testiIndex + 1) % TESTIMONIALS.length;
-  renderTestimonials();
-}, 6000);
+
+function resetTestiTimer() {
+  clearInterval(testiTimer);
+  testiTimer = setInterval(() => {
+    testiIndex = (testiIndex + 1) % TESTIMONIALS.length;
+    updateTestiPosition();
+  }, 6000);
+}
 
 /* ---------- WhatsApp order system ---------- */
 function escapeStr(s) { return s.replace(/'/g, "\\'"); }
