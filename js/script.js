@@ -40,7 +40,7 @@ const I18N = {
     "portfolio.lbCta": "اطلب مشروعًا مشابهًا",
     "portfolio.lbBrowse": "تصفح البورتفوليو",
     "filter.all": "الكل",
-    "testimonials.eyebrow": "آراء شركاء النجاح", "testimonials.title": "ماذا يقول عملاؤنا",
+    "testimonials.eyebrow": "آراء شركاء النجاح", "testimonials.title": "ماذا يقول عملاؤنا", "testimonials.loadMore": "عرض المزيد", "testimonials.showLess": "إخفاء",
     "cta.title": "جاهز لبدء مشروعك؟",
     "cta.desc": "تواصل معنا الآن وسيقوم فريقنا بالرد عليك فورًا لمناقشة التفاصيل وتقديم الاستشارة مجانًا.",
     "cta.button": "ابدأ مشروعك الآن",
@@ -75,8 +75,8 @@ const I18N = {
     "portfolio.lbCta": "Request a similar project",
     "portfolio.lbBrowse": "Browse Portfolio",
     "filter.all": "All",
-    "testimonials.eyebrow": "What our partners say", "testimonials.title": "What our clients say",
-    "cta.title": "Ready to start your project?",
+    "testimonials.eyebrow": "Success Partners", "testimonials.title": "What Our Clients Say", "testimonials.loadMore": "Load More", "testimonials.showLess": "Show Less",
+    "cta.title": "Ready to Start Your Project?",
     "cta.desc": "Reach out now and our team will respond right away to discuss the details and offer a free consultation.",
     "cta.button": "Start your project now",
     "footer.about": "We design and craft luxury digital interfaces and identities that reflect the value of your work and grow your success online.",
@@ -123,7 +123,7 @@ const PORTFOLIO = [
 const TESTIMONIALS = [
   { img: "Image/الدكتور فهمي 2.png", name: "الدكتور فهمي عرم", nameEn: "Dr. Fahmi Aram", role: { ar: "أستاذ الجراحة", en: "Professor of Surgery" }, comment: { ar: "الموقع قمة التميز والابداع يعكس مدى العلم والفن الذي وصلت له عقول ابناءنا وبناتنا الشباب وحصاد التعلم والجهد الذي بذلوه في مجال تقنية المعلومات. شي يدعو الى الفخر والاعتزاز والتنبوء بمستقبل زاهر في عالم الفن والتكنولوجيا.", en: "The website is the pinnacle of excellence and creativity. It reflects the level of science and art reached by the minds of our young men and women, and the harvest of their learning and effort in the field of information technology. It is something that calls for pride and the prediction of a bright future in the world of art and technology." } },
   { img: "Image/شعار نوتس باند.png", name: "فرقة نوتس باند", nameEn: "Notes Band", role: { ar: "فرقة موسيقية حضرمية", en: "Hadhrami musical band" }, comment: { ar: "كان التعاون مع <strong>Craftfolio Studio</strong> تجربة احترافية بكل معنى الكلمة. استطاع الفريق تحويل رؤيتنا إلى موقع إلكتروني عصري يعكس هوية <strong>Notes Band</strong> ويبرز أعمالنا وأعضاء الفرقة بطريقة أنيقة وسهلة التصفح. لمسنا اهتمامًا كبيرًا بالتفاصيل، وسرعة في تنفيذ الملاحظات، وحرصًا على تقديم أفضل نتيجة. كل الشكر لفريق Craftfolio Studio، ونتطلع إلى المزيد من التعاون في المستقبل.", en: "Collaborating with <strong>Craftfolio Studio</strong> was a truly professional experience. The team transformed our vision into a modern website that reflects the <strong>Notes Band</strong> identity and showcases our work and band members elegantly and seamlessly. We noticed great attention to detail, fast implementation of feedback, and a commitment to delivering the best result. Thanks to the Craftfolio Studio team, and we look forward to more collaborations in the future." } },
-  { img: "Image/ايقونة اثر.png", name: "أثير باعيسى", nameEn: "Atheer Ba'eesa", role: { ar: "طالبة هندسة كيميائية و مؤسسة منصة أثر", en: "Chemical Engineering Student & Founder of Athar Platform" }, comment: { ar: "كان التعاون مع Craftfolio Studio في تنفيذ الموقع تجربة مميزة جدًا؛ فقد انعكس الاهتمام بالتفاصيل والتنظيم بشكل واضح في النتيجة النهائية، من تقسيم المحتوى إلى تبويبات واضحة، وتنظيم المعلومات داخل كل قسم، إلى تنسيق الألوان والرسومات بشكل متناسق، مما جعل الموقع سهل التصفح وواضحًا. كما كان التعامل راقيًا ومرنًا، مع تقبّل الملاحظات وسرعة تنفيذ التعديلات، والحرص على أدق التفاصيل حتى الوصول إلى الشكل المطلوب.", en: "Collaborating with Craftfolio Studio to implement the website was a very special experience. The attention to detail and organization was clearly reflected in the final result, from dividing the content into clear tabs, organizing the information within each section, to harmonizing colors and graphics, making the site easy to navigate and clear. The communication was also classy and flexible, with openness to feedback, quick implementation of modifications, and keenness on the smallest details until reaching the desired outcome." } }
+  { img: "Image/ايقونة اثر.png", name: "أثير باعيسى", nameEn: "Atheer Ba'eesa", role: { ar: "طالبة هندسة كيميائية و مؤسسة منصة أثر", en: "Chemical Engineering Student & Founder of Athar Platform" }, comment: { ar: "كان التعاون مع Craftfolio Studio في تنفيذ الموقع تجربة مميزة جدًا؛ فقد انعكس الاهتمام بالتفاصيل والتنظيم بشكل واضح في النتيجة النهائية، من تقسيم المحتوى إلى تبويبات واضحة، وتنظيم المعلومات داخل كل قسم، إلى تنسيق الألوان والرسومات بشكل متناسق، مما جعل الموقع سهل التصفح وواضحًا. كما كان التعامل راقيًا ومرنًا، مع تقبّل الملاحظات وسرعة تنفيذ التعديلات، والحرص على أدق التفاصيل حتى الوصول إلى الشكل المطلوب.", en: "Collaborating with Craftfolio Studio to implement the website was a very special experience. The attention to detail and organization was clearly reflected in the final result, from dividing the content into clear tabs, organizing the information within each section, to harmonizing colors and graphics, making the site easy to navigate and clear. The communication was also classy and flexible, with openness to feedback, quick implementation of modifications, and keenness on the smallest details until reaching the desired outcome." } },
 ];
 
 let currentLang = "ar";
@@ -236,15 +236,22 @@ function openLightbox(i) {
 function closeLightbox() { document.getElementById("lightbox").classList.remove("open"); }
 
 /* ---------- render: testimonials ---------- */
-let testiIndex = 0;
-let testiTimer;
+let showingAllTestimonials = false;
+
 function renderTestimonials() {
-  const track = document.getElementById("testi-track");
-  const dots = document.getElementById("testi-dots");
-  track.innerHTML = TESTIMONIALS.map(tItem => {
+  const grid = document.getElementById("testi-grid");
+  const moreBtnContainer = document.getElementById("testi-more-container");
+  const loadMoreBtn = document.getElementById("testi-load-more");
+  const showLessBtn = document.getElementById("testi-show-less");
+  
+  if (!grid) return;
+  
+  const toShow = showingAllTestimonials ? TESTIMONIALS : TESTIMONIALS.slice(0, 3);
+  
+  grid.innerHTML = toShow.map(tItem => {
     const name = currentLang === "ar" ? tItem.name : tItem.nameEn;
     const initial = name.trim().charAt(0);
-    return `<div class="testi-slide">
+    return `
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
         <p class="testi-comment">${tItem.comment[currentLang]}</p>
@@ -253,38 +260,32 @@ function renderTestimonials() {
           <div style="text-align:${currentLang === 'ar' ? 'right' : 'left'}"><b>${name}</b><span>${tItem.role[currentLang]}</span></div>
         </div>
       </div>
-    </div>`;
+    `;
   }).join("");
-  dots.innerHTML = TESTIMONIALS.map((_, i) => `<span class="testi-dot ${i === testiIndex ? 'active' : ''}" data-i="${i}"></span>`).join("");
-  
-  dots.querySelectorAll(".testi-dot").forEach(d => {
-    d.addEventListener("click", () => { 
-      testiIndex = parseInt(d.dataset.i); 
-      updateTestiPosition(); 
-      resetTestiTimer();
-    });
-  });
-  updateTestiPosition();
-  resetTestiTimer();
+
+  if (TESTIMONIALS.length > 3) {
+    moreBtnContainer.style.display = "flex";
+    if (showingAllTestimonials) {
+      loadMoreBtn.style.display = "none";
+      showLessBtn.style.display = "block";
+    } else {
+      loadMoreBtn.style.display = "block";
+      showLessBtn.style.display = "none";
+    }
+  } else {
+    moreBtnContainer.style.display = "none";
+  }
 }
 
-function updateTestiPosition() {
-  const track = document.getElementById("testi-track");
-  const dots = document.getElementById("testi-dots");
-  const dir = currentLang === "ar" ? 1 : -1;
-  track.style.transform = `translateX(${dir * testiIndex * 100}%)`;
-  dots.querySelectorAll(".testi-dot").forEach((d, i) => {
-    if (i === testiIndex) d.classList.add("active");
-    else d.classList.remove("active");
-  });
+function loadMoreTestimonials() {
+  showingAllTestimonials = true;
+  renderTestimonials();
 }
 
-function resetTestiTimer() {
-  clearInterval(testiTimer);
-  testiTimer = setInterval(() => {
-    testiIndex = (testiIndex + 1) % TESTIMONIALS.length;
-    updateTestiPosition();
-  }, 6000);
+function showLessTestimonials() {
+  showingAllTestimonials = false;
+  renderTestimonials();
+  document.getElementById("testimonials").scrollIntoView({ behavior: 'smooth' });
 }
 
 /* ---------- WhatsApp order system ---------- */
