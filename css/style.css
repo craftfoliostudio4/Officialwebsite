@@ -61,11 +61,12 @@ ul{list-style:none;}
 .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
 .eyebrow{
   font-family:var(--font-ar);
-  font-size:22px;
+  font-size:clamp(14px, 3.5vw, 16px);
   font-weight:700;
   color:var(--sage);
   display:flex; align-items:center; justify-content:center; gap:16px;
   margin-bottom:16px;
+  white-space:nowrap;
 }
 .eyebrow::before, .eyebrow::after{content:""; width:40px; height:2px; background:var(--sage);}
 h1,h2,h3,h4{font-weight:800; letter-spacing:-.01em; color:var(--ink);}
