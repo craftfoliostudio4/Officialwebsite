@@ -46,7 +46,8 @@ const I18N = {
     "cta.button": "ابدأ مشروعك الآن",
     "footer.about": "نصمم ونصنع واجهات وهويات رقمية فاخرة تعكس قيمة أعمالك وتزيد من نجاحك في العالم الرقمي.",
     "footer.company": "الشركة", "footer.explore": "استكشف", "footer.contact": "تواصل",
-    "footer.rights": "جميع الحقوق محفوظة.", "footer.made": "صُنع بحرفية ودقة."
+    "footer.rights": "جميع الحقوق محفوظة.", "footer.made": "صُنع بحرفية ودقة.",
+    "footer.contactUs": "للتواصل معنا :"
   },
   en: {
     "brand.name": SETTINGS.companyName.en,
@@ -80,7 +81,8 @@ const I18N = {
     "cta.button": "Start your project now",
     "footer.about": "We design and craft luxury digital interfaces and identities that reflect the value of your work and grow your success online.",
     "footer.company": "Company", "footer.explore": "Explore", "footer.contact": "Contact",
-    "footer.rights": "All rights reserved.", "footer.made": "Crafted with precision."
+    "footer.rights": "All rights reserved.", "footer.made": "Crafted with precision.",
+    "footer.contactUs": "Contact us :"
   }
 };
 
@@ -120,7 +122,8 @@ const PORTFOLIO = [
 
 const TESTIMONIALS = [
   { img: "Image/الدكتور فهمي 2.png", name: "الدكتور فهمي عرم", nameEn: "Dr. Fahmi Aram", role: { ar: "أستاذ الجراحة", en: "Professor of Surgery" }, comment: { ar: "الموقع قمة التميز والابداع يعكس مدى العلم والفن الذي وصلت له عقول ابناءنا وبناتنا الشباب وحصاد التعلم والجهد الذي بذلوه في مجال تقنية المعلومات. شي يدعو الى الفخر والاعتزاز والتنبوء بمستقبل زاهر في عالم الفن والتكنولوجيا.", en: "The website is the pinnacle of excellence and creativity. It reflects the level of science and art reached by the minds of our young men and women, and the harvest of their learning and effort in the field of information technology. It is something that calls for pride and the prediction of a bright future in the world of art and technology." } },
-  { img: "Image/شعار نوتس باند.png", name: "فرقة نوتس باند", nameEn: "Notes Band", role: { ar: "فرقة موسيقية حضرمية", en: "Hadhrami musical band" }, comment: { ar: "كان التعاون مع <strong>Craftfolio Studio</strong> تجربة احترافية بكل معنى الكلمة. استطاع الفريق تحويل رؤيتنا إلى موقع إلكتروني عصري يعكس هوية <strong>Notes Band</strong> ويبرز أعمالنا وأعضاء الفرقة بطريقة أنيقة وسهلة التصفح. لمسنا اهتمامًا كبيرًا بالتفاصيل، وسرعة في تنفيذ الملاحظات، وحرصًا على تقديم أفضل نتيجة. كل الشكر لفريق Craftfolio Studio، ونتطلع إلى المزيد من التعاون في المستقبل.", en: "Collaborating with <strong>Craftfolio Studio</strong> was a truly professional experience. The team transformed our vision into a modern website that reflects the <strong>Notes Band</strong> identity and showcases our work and band members elegantly and seamlessly. We noticed great attention to detail, fast implementation of feedback, and a commitment to delivering the best result. Thanks to the Craftfolio Studio team, and we look forward to more collaborations in the future." } }
+  { img: "Image/شعار نوتس باند.png", name: "فرقة نوتس باند", nameEn: "Notes Band", role: { ar: "فرقة موسيقية حضرمية", en: "Hadhrami musical band" }, comment: { ar: "كان التعاون مع <strong>Craftfolio Studio</strong> تجربة احترافية بكل معنى الكلمة. استطاع الفريق تحويل رؤيتنا إلى موقع إلكتروني عصري يعكس هوية <strong>Notes Band</strong> ويبرز أعمالنا وأعضاء الفرقة بطريقة أنيقة وسهلة التصفح. لمسنا اهتمامًا كبيرًا بالتفاصيل، وسرعة في تنفيذ الملاحظات، وحرصًا على تقديم أفضل نتيجة. كل الشكر لفريق Craftfolio Studio، ونتطلع إلى المزيد من التعاون في المستقبل.", en: "Collaborating with <strong>Craftfolio Studio</strong> was a truly professional experience. The team transformed our vision into a modern website that reflects the <strong>Notes Band</strong> identity and showcases our work and band members elegantly and seamlessly. We noticed great attention to detail, fast implementation of feedback, and a commitment to delivering the best result. Thanks to the Craftfolio Studio team, and we look forward to more collaborations in the future." } },
+  { img: "Image/ايقونة اثر.png", name: "أثير باعيسى", nameEn: "Atheer Ba'eesa", role: { ar: "طالبة هندسة كيميائية و مؤسسة منصة أثر", en: "Chemical Engineering Student & Founder of Athar Platform" }, comment: { ar: "كان التعاون مع Craftfolio Studio في تنفيذ الموقع تجربة مميزة جدًا؛ فقد انعكس الاهتمام بالتفاصيل والتنظيم بشكل واضح في النتيجة النهائية، من تقسيم المحتوى إلى تبويبات واضحة، وتنظيم المعلومات داخل كل قسم، إلى تنسيق الألوان والرسومات بشكل متناسق، مما جعل الموقع سهل التصفح وواضحًا. كما كان التعامل راقيًا ومرنًا، مع تقبّل الملاحظات وسرعة تنفيذ التعديلات، والحرص على أدق التفاصيل حتى الوصول إلى الشكل المطلوب.", en: "Collaborating with Craftfolio Studio to implement the website was a very special experience. The attention to detail and organization was clearly reflected in the final result, from dividing the content into clear tabs, organizing the information within each section, to harmonizing colors and graphics, making the site easy to navigate and clear. The communication was also classy and flexible, with openness to feedback, quick implementation of modifications, and keenness on the smallest details until reaching the desired outcome." } }
 ];
 
 let currentLang = "ar";
@@ -142,10 +145,6 @@ function applyI18n() {
   });
   document.querySelectorAll(".lang-toggle").forEach(btn => btn.textContent = currentLang === "ar" ? "EN" : "AR");
   renderServices(); renderFilters(); renderPortfolio(currentFilter); renderTestimonials();
-  document.getElementById("footer-email").textContent = SETTINGS.email;
-  document.getElementById("footer-email").href = "mailto:" + SETTINGS.email;
-  document.getElementById("footer-wa").textContent = currentLang === "ar" ? "واتساب مباشر" : "WhatsApp Direct";
-  document.getElementById("footer-wa").href = "https://wa.me/" + SETTINGS.whatsapp;
   document.getElementById("social-wa").href = "https://wa.me/" + SETTINGS.whatsapp;
   document.getElementById("social-tg").href = SETTINGS.telegram;
   document.getElementById("social-ig").href = SETTINGS.instagram;
@@ -349,6 +348,14 @@ document.querySelectorAll(".nav-links a").forEach(a => {
     document.getElementById("navLinks").classList.remove("open");
     document.getElementById("burger").classList.remove("active");
   });
+});
+document.addEventListener("click", (e) => {
+  const navLinks = document.getElementById("navLinks");
+  const burger = document.getElementById("burger");
+  if (navLinks.classList.contains("open") && !navLinks.contains(e.target) && !burger.contains(e.target)) {
+    navLinks.classList.remove("open");
+    burger.classList.remove("active");
+  }
 });
 document.getElementById("back-to-top").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 document.getElementById("lightbox").addEventListener("click", (e) => { if (e.target.id === "lightbox") closeLightbox(); });
