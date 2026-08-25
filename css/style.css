@@ -113,7 +113,7 @@ h1,h2,h3,h4{font-weight:800; letter-spacing:-.01em; color:var(--ink);}
 .icon-btn{width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; border:1px solid var(--line); transition:.3s;}
 .icon-btn:hover{border-color:var(--sage); background:var(--stone-soft);}
 .icon-btn svg{width:18px; height:18px;}
-#lang-toggle{font-family:var(--font-mono); font-weight:600; font-size:12.5px; width:auto; padding:0 12px;}
+.lang-toggle{font-family:var(--font-en); font-weight:700; font-size:14px; line-height:1; display:flex; align-items:center; justify-content:center; padding-top:2px;}
 .burger{display:none; width:40px; height:40px; align-items:center; justify-content:center; border-radius:50%; border:1px solid var(--line);}
 .burger svg{width:18px;height:18px;}
 @media (max-width:960px){
@@ -235,12 +235,11 @@ h1,h2,h3,h4{font-weight:800; letter-spacing:-.01em; color:var(--ink);}
 .pillar p{font-size:14px; color:var(--muted); margin:0;}
 
 /* ============ SERVICES ============ */
-.centered-cards{display:flex; flex-wrap:wrap; justify-content:center; gap:24px;}
-.centered-cards > *{width:calc(33.333% - 16px);}
-@media (max-width:960px){.centered-cards > *{width:calc(50% - 12px);}}
+.centered-cards{display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; grid-auto-rows:1fr;}
+.centered-cards > *{width:100%;}
+@media (max-width:960px){.centered-cards{grid-template-columns:repeat(2, 1fr);}}
 @media (max-width:640px){
-  .centered-cards > *{width:calc(50% - 8px);}
-  .centered-cards{gap: 16px;}
+  .centered-cards{grid-template-columns:repeat(2, 1fr); gap:16px;}
 }
 .card{
   background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md);
