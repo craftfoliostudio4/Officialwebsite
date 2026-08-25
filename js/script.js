@@ -114,7 +114,8 @@ const PF_CATS = [
 const PORTFOLIO = [
   { url: "https://craftfoliostudio4.github.io/Fahmi/", img: "Image/الدكتور فهمي.png", cat: "personal", icon: "person", ar: { t: "الدكتور فهمي عرم", d: "موقع شخصي (بورتفوليو) احترافي للدكتور فهمي عرم." }, en: { t: "Dr. Fahmi Aram", d: "A professional personal portfolio site for Dr. Fahmi Aram." } },
   { url: "https://mo-sakaf.github.io/mo_sakaf/", img: "Image/محمد عمر.png", cat: "personal", icon: "person", ar: { t: "محمد عمر السقاف", d: "موقع شخصي (بورتفوليو) احترافي لمحمد عمر السقاف." }, en: { t: "Mohammed Omar Al-Saqqaf", d: "A professional personal portfolio site for Mohammed Omar Al-Saqqaf." } },
-  { url: "https://craftfoliostudio4.github.io/Notesband/", img: "Image/نوتس باند.png", cat: "business", icon: "person", ar: { t: "فرقة نوتس باند", d: "فرقة موسيقية حضرمية تقدم مقطوعات موسيقية بطابع جديد." }, en: { t: "Notes Band", d: "A Hadhrami musical band that presents musical pieces in a new style." } }
+  { url: "https://craftfoliostudio4.github.io/Notesband/", img: "Image/نوتس باند.png", cat: "business", icon: "person", ar: { t: "فرقة نوتس باند", d: "فرقة موسيقية حضرمية تقدم مقطوعات موسيقية بطابع جديد." }, en: { t: "Notes Band", d: "A Hadhrami musical band that presents musical pieces in a new style." } },
+  { url: "https://craftfoliostudio4.github.io/Athar/", img: "Image/موقع اثر.png", cat: "business", icon: "building", ar: { t: "موقع أثر", d: "بوابتك المعرفية الشاملة والمبسطة لاستكشاف كل ما يخص الهندسة الكيميائية، مصممة بعناية لترافقك من الأساسيات وحتى التطبيقات المتقدمة." }, en: { t: "Ather Website", d: "Your comprehensive and simplified knowledge portal to explore everything related to chemical engineering, carefully designed to accompany you from basics to advanced applications." } }
 ];
 
 const TESTIMONIALS = [
@@ -210,6 +211,11 @@ function renderPortfolio(filter) {
       <div class="pf-info">
         <span class="pf-tag">${catObj[currentLang]}</span>
         <h4>${d.t}</h4>
+        <div class="pf-actions" style="margin-top: auto; padding-top: 12px;">
+          <span class="btn btn-sage btn-sm" style="width: 100%; pointer-events: none; justify-content: center;">
+            ${currentLang === 'ar' ? 'عرض التفاصيل' : 'View Details'}
+          </span>
+        </div>
       </div>
     </div>`;
   }).join("");
@@ -330,11 +336,15 @@ window.addEventListener("scroll", () => {
   navbar.classList.toggle("scrolled", window.scrollY > 20);
   document.getElementById("back-to-top").classList.toggle("show", window.scrollY > 600);
 });
-document.getElementById("burger").addEventListener("click", () => {
+document.getElementById("burger").addEventListener("click", function() {
   document.getElementById("navLinks").classList.toggle("open");
+  this.classList.toggle("active");
 });
 document.querySelectorAll(".nav-links a").forEach(a => {
-  a.addEventListener("click", () => document.getElementById("navLinks").classList.remove("open"));
+  a.addEventListener("click", () => {
+    document.getElementById("navLinks").classList.remove("open");
+    document.getElementById("burger").classList.remove("active");
+  });
 });
 document.getElementById("back-to-top").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 document.getElementById("lightbox").addEventListener("click", (e) => { if (e.target.id === "lightbox") closeLightbox(); });
