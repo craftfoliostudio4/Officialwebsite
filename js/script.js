@@ -231,7 +231,7 @@ function openLightbox(i) {
   document.getElementById("lb-desc").textContent = d.d;
   document.getElementById("lb-visual").innerHTML = p.img ? `<img src="${p.img}" alt="${d.t}" style="width:100%;height:100%;object-fit:cover;">` : iconSvg(p.icon, 'style="width:80px;height:80px;color:var(--ink)"');
   document.getElementById("lb-btn-browse").href = p.url || "#";
-  document.getElementById("lb-btn-order").setAttribute("onclick", `orderWA('${escapeStr(d.t)}')`);
+  document.getElementById("lb-btn-order").setAttribute("onclick", `orderWA('${escapeStr(d.t)}', null, true)`);
   document.getElementById("lightbox").classList.add("open");
 }
 function closeLightbox() { document.getElementById("lightbox").classList.remove("open"); }
@@ -290,16 +290,20 @@ function resetTestiTimer() {
 
 /* ---------- WhatsApp order system ---------- */
 function escapeStr(s) { return s.replace(/'/g, "\\'"); }
-function orderWA(serviceName, price) {
+function orderWA(serviceName, price, isProject) {
   let msg;
   if (currentLang === "ar") {
-    if (serviceName) {
+    if (isProject) {
+      msg = `السلام عليكم،\n\nأرغب في تصميم موقع مشابه لمشروع "${serviceName}".\nأرجو التواصل معي لمناقشة التفاصيل.`;
+    } else if (serviceName) {
       msg = `السلام عليكم،\n\nأرغب في طلب خدمة ${serviceName}.\n` + (price ? `\nالسعر المعروض:\n${price} ريال سعودي.\n` : "") + `\nأرجو التواصل معي لإكمال التفاصيل.`;
     } else {
       msg = `السلام عليكم،\n\nأرغب بالحصول على استشارة مجانية بخصوص مشروعي.\nأرجو التواصل معي.`;
     }
   } else {
-    if (serviceName) {
+    if (isProject) {
+      msg = `Hello,\n\nI would like a website similar to the project "${serviceName}".\nPlease get in touch to discuss details.`;
+    } else if (serviceName) {
       msg = `Hello,\n\nI would like to request the ${serviceName} service.\n` + (price ? `\nQuoted price: ${price} SAR.\n` : "") + `\nPlease contact me to complete the details.`;
     } else {
       msg = `Hello,\n\nI would like a free consultation about my project.\nPlease get in touch.`;
