@@ -323,7 +323,7 @@ h1,h2,h3,h4{font-weight:800; letter-spacing:-.01em; color:var(--ink);}
 .testi-stars{color:var(--sage); font-size:18px; letter-spacing:3px; margin:0;}
 .testi-comment{font-size:18px; line-height:1.7; margin:0; align-self:center; color:var(--ink-soft);}
 .testi-person{display:flex; align-items:center; justify-content:center; gap:12px;}
-.avatar{width:44px; height:44px; border-radius:50%; background:var(--stone-soft); display:flex; align-items:center; justify-content:center; font-weight:700; color:var(--sage-dark); font-family:var(--font-mono);}
+.avatar{width:44px; height:44px; border-radius:50%; background:var(--stone-soft); display:flex; align-items:center; justify-content:center; font-weight:700; color:var(--sage-dark); font-family:var(--font-mono); flex-shrink:0; overflow:hidden;}
 .testi-person b{display:block; font-size:14.5px;}
 .testi-person span{font-size:12.5px; color:var(--muted);}
 
